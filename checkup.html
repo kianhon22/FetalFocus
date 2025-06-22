@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+  <style>
+    body {
+      background-image: linear-gradient(90deg, rgb(192, 219, 234), rgb(201, 167, 235));
+      margin: 0;
+      padding-bottom: 100px; /* add some padding to the bottom */
+    }
+    
+    #navbar {
+      overflow:hidden;
+      background: white;
+      padding: 10px 20px;
+      transition: 1s;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 59;
+      display: flex;
+      align-items: center;
+    }
+    
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      line-height: 25px;
+      border-radius: 4px;
+      margin: 0 15px;
+    }
+    
+    #navbar #logo {
+      font-size: 100px;
+      font-weight: bold;
+      transition: 1s;
+      background-image: url('https://i.pinimg.com/originals/3f/99/9d/3f999da2d7d4f5ac5e63320656a3f47d.jpg');
+      background-size: 250px 270px;
+      background-position: center;
+      padding: 30px;
+    }
+    
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    #navbar a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+    
+    #navbar-right {
+      float: right;
+      margin-right: 50px;
+    }
+    
+    .centered {
+      text-align: left;
+      padding-right: 20px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .button {
+      padding: 10px 70px;
+      background-color: black;
+      box-shadow: #333;
+      border: 0;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: 500;
+      border-radius: 30px;
+      color: white;
+      position: absolute;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .popup {
+      width: 300px;
+      height: 160px;
+      background: white;
+      border-right: 6px;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.1);
+      text-align: center;
+      padding: 0 30px 30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s;
+    }
+    
+    .open-popup {
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    
+
+.popup h2 {
+font-size: 1.8rem;
+margin-bottom: 2rem;
+}
+
+.popup p {
+font-size: 1.2rem;
+line-height: 1.5;
+margin-bottom: 2rem;
+}
+
+.popup form input[type="text"],
+.popup form textarea {
+width: 100%;
+padding: 0.5rem;
+margin-bottom: 1rem;
+border: none;
+border-bottom: 2px solid #333;
+}
+
+.popup form textarea {
+resize: none;
+}
+
+.popup form button[type="submit"] {
+background-color: #333;
+color: #fff;
+border: none;
+padding: 0.5rem 1rem;
+cursor: pointer;
+}
+
+.popup form button[type="submit"]:hover {
+background-color: #555;
+}
+
+.popup-close {
+position: absolute;
+top: 1rem;
+right: 1rem;
+font-size: 2rem;
+cursor: pointer;
+color: #999;
+}
+</style>
+<body>
+  <div id="navbar">
+    <a href="#default" id="logo"></a>
+    <a href="home.html">Home</a>
+    <a href="#" class="active">Check-up</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="reels.html">Reels</a>
+    <a href="game.html">Game</a>
+    <a href="userprofile.html">Profile</a>
+    <a href="premium.html">Premium</a>
+
+  </div>
+  <div class="centered">
+    <form method="POST" action="report.html" >
+      <br><br><br><br><br><br>
+      <table>
+        <tr>
+          <td><b>&emsp; Mother Age:</b></td>
+          <td><input type="text" name="a" ></td>
+          <td><span style="padding-right: 10cm"></span><b>Ethnicity:</b></td>
+          <td><input type="text" name="b"></td>
+        </tr>
+        <tr>
+          <td><b><br>&emsp; Biparietal Diameter:</b></td>
+          <td><br><input type="text" name="c"></td>
+          <td><b><br><span style="padding-right: 10cm"></span>Head Circumference:</b></td>
+          <td><br><input type="text" name="d"></td>
+        </tr>
+        <tr>
+          <td><b><br>&emsp; Transverse Cerebellar Diameter:</b></td>
+          <td><br><input type="text" name="e"></td>
+          <td><b><br><span style="padding-right: 10cm"></span>Cisterna Magna:</b></td>
+          <td><br><input type="text" name="f"></td>
+        </tr>
+        <tr>
+          <td><b><br>&emsp; Estimated Fetal Weight:</b></td>
+          <td><br><input type="text" name="g"></td>
+          <td><b><br><span style="padding-right: 10cm"></span>Nuchal Fold Thickness:</b></td>
+          <td><br><input type="text" name="h"></td>
+        </tr>
+
+        <tr>
+          <td><b><br>&emsp; Abdominal Circumference:</b></td>
+          <td><br><input type="text" name="i"></td>
+          <td><b><br><span style="padding-right: 10cm"></span>Femur Length:</b></td>
+          <td><br><input type="text" name="j"></td>
+        </tr>
+ 
+        <tr>
+          <td><b><br>&emsp; Anterior Horn of Lateral Ventricle:</b></td>
+          <td><br><input type="text" name="k"></td>
+          <td><b><br><span style="padding-right: 10cm"></span>Posterior Horn of Lateral Ventricle:</b></td>
+          <td><br><input type="text" name="l"></td>
+        </tr>
+
+        <tr>
+          <td><b><br>&emsp; Fetal Cerebral Hemisphere:</b></td>
+          <td><br><input type="text" name="m"></td>
+          <td><b><br><span style="padding-right: 10cm"></span>Uterine Arterial Resistance Index:</b></td>
+          <td><br><input type="text" name="n"></td>
+        </tr>
+
+        <tr>
+          <td><b><br>&emsp; Uterine Arterial Pulsatility Index:</b></td>
+          <td><br><input type="text" name="o"></td>
+          <td><b><br><span style="padding-right: 10cm"></span>Gestational Age Scan (Week):</b></td>
+          <td><br><input type="text" name="p"></td>
+        </tr>
+
+    
+        <tr>
+            <td><b><br>&emsp; Gestational Age Scan (Day):</b></td>
+            <td><br><input type="text" name="q"></td>
+          </tr>
+ 
+        </table>
+  </form>
+  <br> 
+    <button type="submit" class="button" onclick="openPopup() ">Submit</button>
+    <div class="popup" id="popup">
+      <h2>Thank you</h2>
+      <p>Your response has been recorded.</p>
+      <button type="button" onclick="closePopup()"><a href="report.html">Report</a></button>
+      <button type="button" onclick="closePopup()">Close</button>
+
+    </div>
+
+  </br>
+  
+
+</div>
+  
+
+ 
+
+
+<script>
+  let popup=document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+
+</script>
+
+
+</body>
+
+</html>

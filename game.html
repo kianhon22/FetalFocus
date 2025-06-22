@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--setting the viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <html lang="en-UK">
+  <title>Game</title>
+
+
+  <style>
+    body {
+      background-image: linear-gradient(90deg, rgb(192, 219, 234), rgb(201, 167, 235));
+      margin: 0;
+      padding-bottom: 100px; /* add some padding to the bottom */
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #navbar {
+      overflow: hidden;
+      background: white;
+      padding: 10px 20px;
+      transition: 1s;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 59;
+      display: flex;
+      align-items: center;
+    }
+
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 25px;
+      border-radius: 4px;
+      margin: 0 15px;
+    }
+
+    #navbar #logo {
+      font-size: 100px;
+      font-weight: bold;
+      transition: 1s;
+      background-image: url('https://i.pinimg.com/originals/3f/99/9d/3f999da2d7d4f5ac5e63320656a3f47d.jpg');
+      background-size: 250px 270px;
+      background-position: center;
+      padding: 30px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #navbar a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    #navbar-right {
+      float: right;
+      margin-right: 50px;
+    }
+
+    .baby {
+      text-align: center;
+      margin-top: 50px;
+
+    }
+
+    #profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 550px;
+  height: 550px;
+  position: center;
+}
+    .buttons-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+    }
+
+    .button1 {
+      background-color: #FFC107;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      left: 200px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('toy.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    .button2 {
+      background-color: #E91E63;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      right: 200px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+
+    }
+    .feed-button:hover {
+      cursor: pointer;
+    }
+
+    .button3 {
+      background-color: #2196F3;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border:none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 100px;
+      left: 200px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('bath.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    .button4 {
+      background-color: #4CAF50;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 100px;
+      right: 200px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('sleep.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    img{
+      margin-left: -8px;
+      margin-top: -15px;
+    }
+
+  </style>
+<body>
+    <div id="navbar">
+        <a href="#default" id="logo"></a>
+        <a href="home.html">Home</a>
+        <a href="checkup.html">Check-up</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="reels.html">Reels</a>
+        <a href="#" class="active">Game</a>
+      <a href="userprofile.html">Profile</a>
+      <a href="premium.html">Premium</a>
+
+      
+      </div>
+      <div class="baby">
+        <img id="profile-pic" src="baby.png">
+        <div class="buttons-container">
+          <button class="play-button button1"></button>
+          <button class="feed-button button2">
+            <br><a href="eat.html"><img src="feed.png" width="80px" height="80px" ></a><br>
+
+          </button>
+          <button class="bath-button button3"></button>
+          <button class="sleep-button button4"></button>
+        </div>
+      </div>
+</body>
+</html>
+

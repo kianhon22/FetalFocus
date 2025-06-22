@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Report</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: rgb(171, 171, 171);
+    }
+    .section {
+      margin-top: 20px;
+    }
+    body {
+      background-image: linear-gradient(90deg, rgb(192, 219, 234), rgb(201, 167, 235));
+      margin: 0;
+      padding-bottom: 100px; /* add some padding to the bottom */
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    #navbar {
+      overflow: hidden;
+      background: white;
+      padding: 10px 20px;
+      transition: 1s;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 59;
+      display: flex;
+      align-items: center;
+    }
+
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 25px;
+      border-radius: 4px;
+      margin: 0 15px;
+    }
+
+    #navbar #logo {
+      font-size: 100px;
+      font-weight: bold;
+      transition: 1s;
+      background-image: url('https://i.pinimg.com/originals/3f/99/9d/3f999da2d7d4f5ac5e63320656a3f47d.jpg');
+      background-size: 250px 270px;
+      background-position: center;
+      padding: 30px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #navbar a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    #navbar-right {
+      float: right;
+      margin-right: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <a href="#default" id="logo"></a>
+    <a href="home.html">Home</a>
+    <a href="checkup.html">Check-up</a>
+    <a href="checkup.html">Appointment</a>
+    <a href="reels.html">Reels</a>
+    <a href="game.html">Game</a>
+  <a href="userprofile.html">Profile</a>
+  <a href="#" class="active">Premium</a>
+
+  </div>
+
+  <h1><br><br><br><br><br>&emsp; Medical Report</h1>
+  <table>
+    <tr>
+      <th>&emsp;Patient Information</th>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td>Tan Mei Mei</td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Identity Card / Passport No.:</td>
+      <td>880104-02-7528</td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td>+60111671623</td>
+    </tr>
+    
+    <tr>
+      <td>Adress:</td>
+      <td>L/O 91, Queen Street, Bay Munich, 18219, Selangor.</td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>Mei1988@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Number of Children:</td>
+      <td>2</td>
+    </tr>
+  </table>
+  <div class="section">
+    <h2>&emsp; Result</h2>
+    <table>
+      <tr>
+        <th>&emsp;Details</th>
+        <th>Data</th>
+      </tr>
+      <tr>
+        <td>Mother Age</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>Mother Height</td>
+        <td>143</td>
+      </tr>
+      <tr>
+        <td>Presentation Breech</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Presentation Cephalic</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Presentation Other</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>PLacenta Site Previa</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Amniotic Anhydramnios</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Amniotic Normal</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Hypertension nil</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Hypertension pih</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>diabetes gdm</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>diabetes nil</td>
+        <td>0</td>
+      </tr>
+      
+    </table>
+
+    <div class="section">
+      <h2>&emsp; Final Result</h2>
+      <table>
+        <tr>
+          <th>Vaginal Delivery</th>
+          
+        </tr>
+
+
+    </table>
+  </div>
+ </body>
+ </html>

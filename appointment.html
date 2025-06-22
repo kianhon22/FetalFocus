@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+  <style>
+    body {
+      background-image: linear-gradient(90deg, rgb(192, 219, 234), rgb(201, 167, 235));
+      margin: 0;
+      padding-bottom: 100px; /* add some padding to the bottom */
+    }
+    
+    #navbar {
+      overflow:hidden;
+      background: white;
+      padding: 10px 20px;
+      transition: 1s;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 59;
+      display: flex;
+      align-items: center;
+    }
+    
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      line-height: 25px;
+      border-radius: 4px;
+      margin: 0 15px;
+    }
+    
+    #navbar #logo {
+      font-size: 100px;
+      font-weight: bold;
+      transition: 1s;
+      background-image: url('https://i.pinimg.com/originals/3f/99/9d/3f999da2d7d4f5ac5e63320656a3f47d.jpg');
+      background-size: 250px 270px;
+      background-position: center;
+      padding: 30px;
+    }
+    
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    #navbar a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+    
+    #navbar-right {
+      float: right;
+      margin-right: 50px;
+    }
+
+    form {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 12px rgba(14, 14, 14, 0.3);
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+select:hover,
+textarea:hover {
+  box-shadow: 0 0 5px rgba(89, 67, 67, 0.3);
+}
+
+label {
+  font-weight: bold;
+  
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    max-width: 100%;
+  }
+}
+
+
+
+</style>
+<body>
+  <div id="navbar">
+    <a href="#default" id="logo"></a>
+    <a href="home.html">Home</a>
+    <a href="checkup.html">Check-up</a>
+    <a href="#" class="active">Appointment</a>
+    <a href="reels.html">Reels</a>
+    <a href="game.html">Game</a>
+    <a href="userprofile.html">Profile</a>
+    <a href="premium.html">Premium</a>
+
+
+  </div>
+  <br><br><br><br><br><br>
+  <form action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time" required><br><br>
+
+    <label for="city">City</label>
+    <select id="service" name="city" required>
+        <option value="city1">Bangsar</option>
+        <option value="city2">George Town</option>
+        <option value="city3">Ampang</option>
+    </select><br><br>
+
+    <label for="hospital">Hospital</label>
+    <select id="service" name="hospital" required>
+        <option value="Hospital1">Pantai Hospital Kuala Lumpur</option>
+        <option value="Hospital2">Tanjung Medical Centre</option>
+        <option value="Hospita3">Ampang Hospital</option>
+    </select><br><br>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+  </body>
+  </html>

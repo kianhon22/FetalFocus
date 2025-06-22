@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="GROUPXX">
+  <!--setting the viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <html lang="en-UK">
+
+  <style>
+    body {
+      background-image: linear-gradient(90deg, rgb(192, 219, 234), rgb(201, 167, 235));
+      margin: 0;
+      padding-bottom: 100px; /* add some padding to the bottom */
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      overflow:hidden;
+    }
+
+    #navbar {
+      overflow: hidden;
+      background: white;
+      padding: 10px 20px;
+      transition: 1s;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 59;
+      display: flex;
+      align-items: center;
+    }
+
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 25px;
+      border-radius: 4px;
+      margin: 0 15px;
+    }
+
+    #navbar #logo {
+      font-size: 100px;
+      font-weight: bold;
+      transition: 1s;
+      background-image: url('https://i.pinimg.com/originals/3f/99/9d/3f999da2d7d4f5ac5e63320656a3f47d.jpg');
+      background-size: 250px 270px;
+      background-position: center;
+      padding: 30px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #navbar a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    #navbar-right {
+      float: right;
+      margin-right: 50px;
+    }
+
+    #profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 550px;
+  height: 550px;
+  position: center;
+}
+
+.buttons-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+    }
+
+    .button1 {
+      background-color: #4e1e91;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      left: 200px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3982/3982755.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    .button2 {
+      background-color: #5bd527;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      right: 200px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/284/284780.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+
+    }
+
+    .button3 {
+      background-color: #2196F3;
+      border-radius: 50%;
+      width: 170px;
+      height: 170px;
+      border:none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 100px;
+      left: 100px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/651/651084.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    .button4 {
+      background-color: #db5c1d;
+      border-radius: 50%;
+      width: 110px;
+      height: 110px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 100px;
+      right: 160px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/4645/4645923.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    .button5 {
+      background-color: #fc13be;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 70px;
+      right: 960px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/765/765613.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+    .button6 {
+      background-color: #1b1b1b;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 40px;
+      right: 520px;
+      font-family: "Lucida Sans";
+      font-size: 25px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/452/452540.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+
+
+
+
+</style>
+
+<body>
+<div id="navbar">
+  <a href="#default" id="logo"></a>
+  <a href="home.html">Home</a>
+  <a href="checkup.html">Check-up</a>
+  <a href="appointment.html">Appointment</a>
+  <a href="reels.html">Reels</a>
+  <a href="#" class="active">Game</a>
+  <a href="userprofile.html">Profile</a>
+  <a href="premium.html">Premium</a>
+
+</div>
+<div class="baby">
+    <img id="profile-pic" src="baby.png">
+    <div class="buttons-container">
+        <button onclick="milkFunction()" class="milk-button button1"></button>
+        <button onclick="banFunction()" class="banana-button button2"></button>
+        
+        <button onclick="kfcFunction()" class="kfc-button button3"></button>
+        <button onclick="bubbleFunction()" class="boba-button button4"></button>
+        <button onclick="potatoFunction()" class="potato-button button5"></button>
+        <button onclick="candyFunction()" class="candy-button button6"></button>
+
+    </div>
+    </div>
+
+    <script>
+        function milkFunction(){
+            alert("Correct!Milk is suitable for baby!");
+        }
+
+        function banFunction(){
+            alert("Correct!Banana is suitable for baby!");
+        }
+
+        function kfcFunction(){
+            alert("Incorrect!Fast Food is not suitable for baby!");
+        }
+
+        function bubbleFunction(){
+            alert("Incorrect!Bubble tea is not suitable for baby!");
+        }
+
+        function potatoFunction(){
+            alert("Correct!Potato is suitable for baby!");
+        }
+
+        function candyFunction(){
+            alert("Incorrect!Candy is not suitable for baby!");
+        }
+
+    </script>
+
+    
+</body>
+</html>
